@@ -25,6 +25,7 @@ class BanBeStep2 extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: const MyHomePageBanBeStep2(title: 'Flutter Demo Home Page'),
     );
   }
@@ -64,10 +65,12 @@ class _MyHomePageBanBeStep2 extends State<MyHomePageBanBeStep2> {
     return Scaffold(
      
       body: Container(
+         color: Color.fromARGB(255, 153, 217, 234),
         padding: EdgeInsets.fromLTRB(45, 140, 45,220),
       
         child: Container(
           decoration: BoxDecoration(
+            color:Colors.white,
              borderRadius: BorderRadius.circular(17),
              border: Border.all(width: 3)
           ),
@@ -194,6 +197,7 @@ class _MyHomePageBanBeStep2 extends State<MyHomePageBanBeStep2> {
                       decoration: BoxDecoration(
                     color: Colors.white,
                     border: Border.all(width: 4),
+                    borderRadius: BorderRadius.circular(20)
                     ),
                       child: TextButton(
                   
